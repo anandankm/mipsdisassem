@@ -1,0 +1,1504 @@
+Cycle 1: 
+IQ: 
+[ADDI R8, R0, #20]
+RS-int: 
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 0 0
+R08: 0 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 2: 
+IQ: 
+[ADDI R6, R0, #1]
+RS-int: 
+[ADDI R8, R0, #20]
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R8, R0, #20]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 0 0
+R08: 0 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 3: 
+IQ: 
+[SW R6, 700(R0)]
+RS-int: 
+[ADDI R8, R0, #20]
+[ADDI R6, R0, #1]
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R8, R0, #20]
+     2 : [ADDI R6, R0, #1]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 0 0
+R08: 0 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 4: 
+IQ: 
+[ADDI R7, R0, #4]
+RS-int: 
+[ADDI R6, R0, #1]
+RS-Load: 
+LSQ: 
+[SW R6, 700(R0)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R8, R0, #20]
+     2 : [ADDI R6, R0, #1]
+     3 : [SW R6, 700(R0)]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 0 0
+R08: 0 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 5: 
+IQ: 
+[SW R6, 700(R7)]
+RS-int: 
+[ADDI R7, R0, #4]
+RS-Load: 
+LSQ: 
+[SW R6, 700(R0)] <700>
+ROB: 
+ROB Id : Instruction
+     2 : [ADDI R6, R0, #1]
+     3 : [SW R6, 700(R0)]
+     4 : [ADDI R7, R0, #4]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 0 0
+R08: 20 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 6: 
+IQ: 
+[ADDI R10, R0, #8]
+RS-int: 
+[ADDI R7, R0, #4]
+RS-Load: 
+LSQ: 
+[SW R6, 700(R0)] <700>
+[SW R6, 700(R7)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     3 : [SW R6, 700(R0)]
+     4 : [ADDI R7, R0, #4]
+     5 : [SW R6, 700(R7)]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 0
+R08: 20 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 0 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 7: 
+IQ: 
+[ADDI R3, R10, #-8]
+RS-int: 
+[ADDI R10, R0, #8]
+RS-Load: 
+LSQ: 
+[SW R6, 700(R7)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     4 : [ADDI R7, R0, #4]
+     5 : [SW R6, 700(R7)]
+     6 : [ADDI R10, R0, #8]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 0
+R08: 20 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 8: 
+IQ: 
+[LW R1, 700(R3)]
+RS-int: 
+[ADDI R10, R0, #8]
+[ADDI R3, R10, #-8]
+RS-Load: 
+LSQ: 
+[SW R6, 700(R7)] <704>
+ROB: 
+ROB Id : Instruction
+     5 : [SW R6, 700(R7)]
+     6 : [ADDI R10, R0, #8]
+     1 : [ADDI R3, R10, #-8]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 9: 
+IQ: 
+[ADDI R4, R10, #-4]
+RS-int: 
+[ADDI R3, R10, #-8]
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[SW R6, 700(R7)] <704>
+[LW R1, 700(R3)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     5 : [SW R6, 700(R7)]
+     6 : [ADDI R10, R0, #8]
+     1 : [ADDI R3, R10, #-8]
+     2 : [LW R1, 700(R3)]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 0 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 0 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 10: 
+IQ: 
+[LW R2, 700(R4)]
+RS-int: 
+[ADDI R3, R10, #-8]
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[LW R1, 700(R3)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R3, R10, #-8]
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 11: 
+IQ: 
+[ADD R5, R1, R2]
+RS-int: 
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <Not Ready>
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R3, R10, #-8]
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 12: 
+IQ: 
+[SW R5, 700(R10)]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <700>
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 13: 
+IQ: 
+[ADDI R10, R10, #4]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <700>
+[LW R2, 700(R4)] <704>
+[SW R5, 700(R10)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 14: 
+IQ: 
+[BEQ R10, R8, #4]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <704>
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 15: 
+IQ: 
+[BEQ R10, R8, #4]
+[J #620]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <704>
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 0 0 0 0 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 16: 
+IQ: 
+[BEQ R10, R8, #4]
+[J #620]
+[NOP]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: < Empty >
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 0 0 4 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 17: 
+IQ: 
+[J #620]
+[NOP]
+[BREAK]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: < Empty >
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 0 0 4 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 18: 
+IQ: 
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+     3 : [J #620]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 0 4 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 19: 
+IQ: 
+[ADDI R3, R10, #-8]
+RS-int: 
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+     3 : [J #620]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 0 4 0 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 20: 
+IQ: 
+[LW R1, 700(R3)]
+RS-int: 
+[ADDI R3, R10, #-8]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <708>
+ROB: 
+ROB Id : Instruction
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+     3 : [J #620]
+     4 : [ADDI R3, R10, #-8]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 0 4 2 1 4
+R08: 20 0 8 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 0 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 21: 
+IQ: 
+[ADDI R4, R10, #-4]
+RS-int: 
+[ADDI R3, R10, #-8]
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[LW R1, 700(R3)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [BEQ R10, R8, #4]
+     3 : [J #620]
+     4 : [ADDI R3, R10, #-8]
+     5 : [LW R1, 700(R3)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 0 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 22: 
+IQ: 
+[LW R2, 700(R4)]
+RS-int: 
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[LW R1, 700(R3)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     4 : [ADDI R3, R10, #-8]
+     5 : [LW R1, 700(R3)]
+     6 : [ADDI R4, R10, #-4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 0 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 23: 
+IQ: 
+[ADD R5, R1, R2]
+RS-int: 
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <704>
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     5 : [LW R1, 700(R3)]
+     6 : [ADDI R4, R10, #-4]
+     1 : [LW R2, 700(R4)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 24: 
+IQ: 
+[SW R5, 700(R10)]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <704>
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     5 : [LW R1, 700(R3)]
+     6 : [ADDI R4, R10, #-4]
+     1 : [LW R2, 700(R4)]
+     2 : [ADD R5, R1, R2]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 25: 
+IQ: 
+[ADDI R10, R10, #4]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <708>
+[SW R5, 700(R10)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     5 : [LW R1, 700(R3)]
+     6 : [ADDI R4, R10, #-4]
+     1 : [LW R2, 700(R4)]
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 26: 
+IQ: 
+[BEQ R10, R8, #4]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <708>
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     5 : [LW R1, 700(R3)]
+     6 : [ADDI R4, R10, #-4]
+     1 : [LW R2, 700(R4)]
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 4 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 27: 
+IQ: 
+[BEQ R10, R8, #4]
+[J #620]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     1 : [LW R2, 700(R4)]
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 8 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 28: 
+IQ: 
+[J #620]
+[ADDI R3, R10, #-8]
+RS-int: 
+[ADD R5, R1, R2]
+[BEQ R10, R8, #4]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     1 : [LW R2, 700(R4)]
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+     5 : [BEQ R10, R8, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 1 4 8 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 29: 
+IQ: 
+[ADDI R3, R10, #-8]
+[LW R1, 700(R3)]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+     5 : [BEQ R10, R8, #4]
+     6 : [J #620]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 4 8 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 30: 
+IQ: 
+[LW R1, 700(R3)]
+[ADDI R4, R10, #-4]
+RS-int: 
+[ADDI R3, R10, #-8]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     2 : [ADD R5, R1, R2]
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+     5 : [BEQ R10, R8, #4]
+     6 : [J #620]
+     1 : [ADDI R3, R10, #-8]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 4 8 2 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 31: 
+IQ: 
+[LW R1, 700(R3)]
+[ADDI R4, R10, #-4]
+[LW R2, 700(R4)]
+RS-int: 
+[ADDI R3, R10, #-8]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <712>
+ROB: 
+ROB Id : Instruction
+     3 : [SW R5, 700(R10)]
+     4 : [ADDI R10, R10, #4]
+     5 : [BEQ R10, R8, #4]
+     6 : [J #620]
+     1 : [ADDI R3, R10, #-8]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 4 8 3 1 4
+R08: 20 0 12 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 0 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 32: 
+IQ: 
+[ADDI R4, R10, #-4]
+[LW R2, 700(R4)]
+[ADD R5, R1, R2]
+RS-int: 
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[LW R1, 700(R3)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     5 : [BEQ R10, R8, #4]
+     6 : [J #620]
+     1 : [ADDI R3, R10, #-8]
+     2 : [LW R1, 700(R3)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 4 8 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 33: 
+IQ: 
+[LW R2, 700(R4)]
+[ADD R5, R1, R2]
+[SW R5, 700(R10)]
+RS-int: 
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+LSQ: 
+[LW R1, 700(R3)] <708>
+ROB: 
+ROB Id : Instruction
+     1 : [ADDI R3, R10, #-8]
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 4 8 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 34: 
+IQ: 
+[ADD R5, R1, R2]
+[SW R5, 700(R10)]
+[ADDI R10, R10, #4]
+RS-int: 
+[ADDI R4, R10, #-4]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R1, 700(R3)] <708>
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 8 8 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 35: 
+IQ: 
+[SW R5, 700(R10)]
+[ADDI R10, R10, #4]
+[BEQ R10, R8, #4]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R1, 700(R3)]
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 8 8 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 36: 
+IQ: 
+[ADDI R10, R10, #4]
+[BEQ R10, R8, #4]
+[J #620]
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <712>
+[SW R5, 700(R10)] <Not Ready>
+ROB: 
+ROB Id : Instruction
+     2 : [LW R1, 700(R3)]
+     3 : [ADDI R4, R10, #-4]
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 1 2 8 8 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 37: 
+IQ: 
+[BEQ R10, R8, #4]
+[J #620]
+[ADDI R3, R10, #-8]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[LW R2, 700(R4)] <712>
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 2 8 12 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 38: 
+IQ: 
+[J #620]
+[ADDI R3, R10, #-8]
+[LW R1, 700(R3)]
+RS-int: 
+[ADD R5, R1, R2]
+[ADDI R10, R10, #4]
+[BEQ R10, R8, #4]
+RS-Load: 
+[LW R2, 700(R4)]
+LSQ: 
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 2 8 12 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 39: 
+IQ: 
+[ADDI R3, R10, #-8]
+[LW R1, 700(R3)]
+[ADDI R4, R10, #-4]
+RS-int: 
+[ADD R5, R1, R2]
+[BEQ R10, R8, #4]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     4 : [LW R2, 700(R4)]
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+     3 : [J #620]
+BTB: 
+[Entry 0]: <648, 656, 652, Not Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 2 8 12 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 40: 
+IQ: 
+RS-int: 
+[ADD R5, R1, R2]
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 41: 
+IQ: 
+[NOP]
+RS-int: 
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     5 : [ADD R5, R1, R2]
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 3 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 42: 
+IQ: 
+[BREAK]
+RS-int: 
+RS-Load: 
+LSQ: 
+[SW R5, 700(R10)] <716>
+ROB: 
+ROB Id : Instruction
+     6 : [SW R5, 700(R10)]
+     1 : [ADDI R10, R10, #4]
+     2 : [BEQ R10, R8, #4]
+     4 : [NOP]
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 5 1 4
+R08: 20 0 16 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 0 0 0 0
+732: 0 0
+***************************************************************
+Cycle 43: 
+IQ: 
+[NOP]
+RS-int: 
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+     2 : [BEQ R10, R8, #4]
+     4 : [NOP]
+     5 : [BREAK]
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 5 1 4
+R08: 20 0 20 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 5 0 0 0
+732: 0 0
+***************************************************************
+Cycle 44: 
+IQ: 
+[NOP]
+RS-int: 
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+     5 : [BREAK]
+     6 : [NOP]
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 5 1 4
+R08: 20 0 20 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 5 0 0 0
+732: 0 0
+***************************************************************
+Cycle 45: 
+IQ: 
+[NOP]
+RS-int: 
+RS-Load: 
+LSQ: 
+ROB: 
+ROB Id : Instruction
+BTB: 
+[Entry 0]: <648, 656, 656, Taken>
+[Entry 1]: <652, 620, 620, Taken>
+[Entry 2]: < Empty >
+[Entry 3]: < Empty >
+[Entry 4]: < Empty >
+[Entry 5]: < Empty >
+[Entry 6]: < Empty >
+[Entry 7]: < Empty >
+Registers: 
+R00: 0 2 3 8 12 5 1 4
+R08: 20 0 20 0 0 0 0 0
+R16: 0 0 0 0 0 0 0 0
+R24: 0 0 0 0 0 0 0 0
+Data Segment: 
+700: 1 1 2 3 5 0 0 0
+732: 0 0
+***************************************************************
