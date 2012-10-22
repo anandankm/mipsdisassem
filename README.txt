@@ -1,14 +1,3 @@
-*********************************************************************************************
-Project User Documentation:  Part II, Spring 2010
-Course: CDA 5155 Computer Architecture Principles
-UFID: 6152-1063
-Last Name: Rangasamy; First Name: Anandan
-Project Implementation: Java
-*********************************************************************************************
- “On my honor, I have neither given nor received unauthorized aid on this assignment.”
-*********************************************************************************************
-
-
 **************************************MIPS-32 Simulation*************************************
 Project file: project.jar
 Files in the above jar file: README.txt, MIPSsim.java, Repository.java, Makefile, 
